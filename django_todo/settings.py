@@ -83,9 +83,17 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 
 
 
+#DATABASES = {
+#   'default' : os.environ.get("DATABASE_URL"),
+#}
+
+db_config = dj_database_url.config(default='postgres://skxgnrgk:w15oV-RgUy96n9yPUx_Tjt2qtME2XFYT@trumpet.db.elephantsql.com/skxgnrgk')
+db_config['ATOMIC_REQUESTS'] = True
 DATABASES = {
-    'default' : os.environ.get("DATABASE_URL"),
-}
+     #'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+     #'default': dj_database_url.config(),
+     'default': db_config,
+ }
 
 
 # Password validation
