@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-x!7()-kx_^2o3he%mdqkc3yp7mas=3jf2v$&!5*gmhp!wnj#8f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-rupa830904-hellodjango-2ue6tzp2cq4.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['8000-rupa830904-hellodjango-2ue6tzp2cq4.ws-eu101.gitpod.io', 'rupa-django-todo-69526b1ca428.herokuapp.com']
 
 
 # Application definition
